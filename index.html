@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/th.jpg" />
+    <title>Dark colors</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      body {
+        background-color: rgb(70, 70, 70);
+        height: 100vh;
+        display: flex;
+      }
+
+      .mainContainer {
+        width: 95%;
+        height: 95%;
+        border: 2px solid transparent;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .secondaryContainer {
+        width: 95%;
+        height: 33%;
+        border: 2px solid transparent;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+      }
+
+      .oilBlack {
+        width: 66%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        height: 100%;
+        color: azure;
+        background-color: #0c0c0c;
+        position: relative;
+        transition: 0.4s ease;
+      }
+
+      .oilBlack:hover {
+        transform: scale(1.02);
+      }
+
+      .oilBlack h2 {
+        width: fit-content;
+        border: 2px solid transparent;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+      }
+
+      .oilBlack p {
+        width: 133px;
+        border: 2px solid transparent;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+      }
+
+      .obsidian {
+        width: 33%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        height: 100%;
+        color: azure;
+        background-color: #0b1215;
+        position: relative;
+        transition: 0.4s ease;
+      }
+
+      .obsidian:hover {
+        transform: scale(1.02);
+      }
+
+      .obsidian h2 {
+        width: fit-content;
+        border: 2px solid transparent;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+      }
+
+      .obsidian p {
+        width: 133px;
+        border: 2px solid transparent;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+      }
+
+      .night {
+        width: 25%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        height: 100%;
+        color: azure;
+        background-color: #121212;
+        position: relative;
+        transition: 0.4s ease;
+      }
+
+      .night:hover {
+        transform: scale(1.02);
+      }
+
+      .night h2 {
+        width: fit-content;
+        border: 2px solid transparent;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+      }
+
+      .night p {
+        width: 133px;
+        border: 2px solid transparent;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+      }
+
+      .charcoalGrey {
+        width: 50%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        height: 100%;
+        color: azure;
+        background-color: #171717;
+        position: relative;
+        transition: 0.4s ease;
+      }
+
+      .charcoalGrey:hover {
+        transform: scale(1.02);
+      }
+
+      .charcoalGrey h2 {
+        width: fit-content;
+        border: 2px solid transparent;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+      }
+
+      .charcoalGrey p {
+        width: 133px;
+        border: 2px solid transparent;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+      }
+
+      .richBlack {
+        width: 25%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        height: 100%;
+        color: azure;
+        background-color: #04041b;
+        position: relative;
+        transition: 0.4s ease;
+      }
+
+      .richBlack:hover {
+        transform: scale(1.02);
+      }
+
+      .richBlack h2 {
+        width: fit-content;
+        border: 2px solid transparent;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+      }
+
+      .richBlack p {
+        width: 133px;
+        border: 2px solid transparent;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+      }
+
+      .midnightBlue {
+        width: 40%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        height: 100%;
+        color: azure;
+        background-color: #101720;
+        position: relative;
+        transition: 0.4s ease;
+      }
+
+      .midnightBlue:hover {
+        transform: scale(1.02);
+      }
+
+      .midnightBlue h2 {
+        width: fit-content;
+        border: 2px solid transparent;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+      }
+
+      .midnightBlue p {
+        width: 133px;
+        border: 2px solid transparent;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+      }
+
+      .darkBlue {
+        width: 60%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        height: 100%;
+        color: azure;
+        background-color: #05091e;
+        position: relative;
+        transition: 0.4s ease;
+      }
+
+      .darkBlue:hover {
+        transform: scale(1.02);
+      }
+
+      .darkBlue h2 {
+        width: fit-content;
+        border: 2px solid transparent;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+      }
+
+      .darkBlue p {
+        width: 133px;
+        border: 2px solid transparent;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+      }
+
+      @media (min-width: 360px) and (max-width: 430px) {
+        body {
+          background-color: rgb(70, 70, 70);
+        }
+
+        .mainContainer {
+          width: 95%;
+          height: fit-content;
+          border: 2px solid transparent;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .secondaryContainer {
+          width: 95%;
+          height: 50%;
+          border: 2px solid transparent;
+          margin: 0 auto;
+          padding: 20px;
+          display: flex;
+          gap: 20px;
+          flex-direction: column;
+        }
+
+        .oilBlack {
+          width: 100%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 230px;
+          color: azure;
+          background-color: #0c0c0c;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .oilBlack:hover {
+          transform: scale(1.02);
+        }
+
+        .oilBlack h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .oilBlack p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .obsidian {
+          width: 100%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 230px;
+          color: azure;
+          background-color: #0b1215;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .obsidian:hover {
+          transform: scale(1.02);
+        }
+
+        .obsidian h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .obsidian p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .night {
+          width: 100%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 230px;
+          color: azure;
+          background-color: #121212;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .night:hover {
+          transform: scale(1.02);
+        }
+
+        .night h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .night p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .charcoalGrey {
+          width: 100%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 230px;
+          color: azure;
+          background-color: #171717;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .charcoalGrey:hover {
+          transform: scale(1.02);
+        }
+
+        .charcoalGrey h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .charcoalGrey p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .richBlack {
+          width: 100%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 230px;
+          color: azure;
+          background-color: #04041b;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .richBlack:hover {
+          transform: scale(1.02);
+        }
+
+        .richBlack h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .richBlack p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .midnightBlue {
+          width: 100%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 230px;
+          color: azure;
+          background-color: #101720;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .midnightBlue:hover {
+          transform: scale(1.02);
+        }
+
+        .midnightBlue h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .midnightBlue p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .darkBlue {
+          width: 100%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 230px;
+          color: azure;
+          background-color: #05091e;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .darkBlue:hover {
+          transform: scale(1.02);
+        }
+
+        .darkBlue h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .darkBlue p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1000px) {
+        body {
+          background-color: rgb(70, 70, 70);
+          height: 100vh;
+          display: flex;
+        }
+
+        .mainContainer {
+          width: 95%;
+          height: 95%;
+          border: 2px solid transparent;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .secondaryContainer {
+          width: 95%;
+          height: 33%;
+          border: 2px solid transparent;
+          margin: 0 auto;
+          padding: 20px;
+          display: flex;
+          gap: 20px;
+        }
+
+        .oilBlack {
+          width: 66%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 100%;
+          color: azure;
+          background-color: #0c0c0c;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .oilBlack:hover {
+          transform: scale(1.02);
+        }
+
+        .oilBlack h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .oilBlack p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .obsidian {
+          width: 33%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 100%;
+          color: azure;
+          background-color: #0b1215;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .obsidian:hover {
+          transform: scale(1.02);
+        }
+
+        .obsidian h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .obsidian p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .night {
+          width: 33%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 100%;
+          color: azure;
+          background-color: #121212;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .night:hover {
+          transform: scale(1.02);
+        }
+
+        .night h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .night p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .charcoalGrey {
+          width: 33%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 100%;
+          color: azure;
+          background-color: #171717;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .charcoalGrey:hover {
+          transform: scale(1.02);
+        }
+
+        .charcoalGrey h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .charcoalGrey p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .richBlack {
+          width: 33%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 100%;
+          color: azure;
+          background-color: #04041b;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .richBlack:hover {
+          transform: scale(1.02);
+        }
+
+        .richBlack h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .richBlack p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .midnightBlue {
+          width: 40%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 100%;
+          color: azure;
+          background-color: #101720;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .midnightBlue:hover {
+          transform: scale(1.02);
+        }
+
+        .midnightBlue h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .midnightBlue p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+
+        .darkBlue {
+          width: 60%;
+          border: 2px solid transparent;
+          border-radius: 20px;
+          height: 100%;
+          color: azure;
+          background-color: #05091e;
+          position: relative;
+          transition: 0.4s ease;
+        }
+
+        .darkBlue:hover {
+          transform: scale(1.02);
+        }
+
+        .darkBlue h2 {
+          width: fit-content;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 5%;
+          left: 2%;
+        }
+
+        .darkBlue p {
+          width: 133px;
+          border: 2px solid transparent;
+          position: absolute;
+          bottom: 5%;
+          right: 2%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="secondaryContainer">
+        <div class="oilBlack">
+          <h2>Oil Black</h2>
+          <p>Hex: #0c0c0c RGB:(12,12,12)</p>
+        </div>
+        <div class="obsidian">
+          <h2>Obsidian</h2>
+          <p>Hex: #0b1215 RGB:(11,18,21)</p>
+        </div>
+      </div>
+      <div class="secondaryContainer">
+        <div class="night">
+          <h2>Night</h2>
+          <p>Hex: #121212 RGB:(18,28,28)</p>
+        </div>
+        <div class="charcoalGrey">
+          <h2>Charcoal Grey</h2>
+          <p>Hex: #171717 RGB:(23,23,23)</p>
+        </div>
+        <div class="richBlack">
+          <h2>Rich Black</h2>
+          <p>Hex: #04041b RGB:(4,4,27)</p>
+        </div>
+      </div>
+      <div class="secondaryContainer">
+        <div class="midnightBlue">
+          <h2>Midnight Blue</h2>
+          <p>Hex: #101720 RGB:(16,28,32)</p>
+        </div>
+        <div class="darkBlue">
+          <h2>Dark Blue</h2>
+          <p>Hex: #05091e RGB:(5,9,30)</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
